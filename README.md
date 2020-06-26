@@ -1,4 +1,4 @@
-# sdev300
+# sdev3000
 
 ## Docker image build with an essential devops toolbox
 

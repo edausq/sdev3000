@@ -1,9 +1,9 @@
-FROM fedora:31
+FROM fedora:32
 
 RUN sed '/nodocs/d' /etc/dnf/dnf.conf -i \
   && dnf install -y man-db man-pages
 
-RUN dnf upgrade -y
+RUN dnf upgrade -y && dnf groupinstall "C Development Tools and Libraries" -y
 
 RUN dnf install -y \
   atop \
